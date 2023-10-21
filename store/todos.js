@@ -30,10 +30,9 @@ export const mutations = {
     },
     initializeStore(state) {
         if (process.client) {
-            const storedTodos = JSON.parse(localStorage.getItem('todos'))
-            if (storedTodos.length) {
-                console.log('test', storedTodos)
-                state.todos = storedTodos
+            const storedTodos = localStorage.getItem('todos')
+            if (storedTodos && JSON.parse(storedTodos).length) {
+                state.todos = JSON.parse(storedTodos)
             } else {
                 state.todos = [...initialData];
             }
