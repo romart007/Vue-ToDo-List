@@ -9,7 +9,7 @@
 </template>
 
 <script>
-import TodoList from "../components/todos/TodoList.vue";
+import TodoList from "@/components/todos/TodoList.vue";
 import Alert from "@/components/UI/Alert";
 export default {
   name: "TodoPage",
