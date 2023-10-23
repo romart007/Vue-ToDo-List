@@ -1,4 +1,5 @@
 # todo-app
+App preview: https://vue-todo-list-romart.netlify.app/
 
 ## Build Setup
 
